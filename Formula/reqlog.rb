@@ -5,21 +5,21 @@
 class Reqlog < Formula
   desc "Search, trace, and stream logs across files, Docker containers, and remote hosts"
   homepage "https://github.com/sagarmaheshwary/reqlog"
-  version "0.9.1-rc2"
+  version "0.10.0"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/SagarMaheshwary/reqlog/releases/download/v0.9.1-rc2/reqlog_0.9.1-rc2_darwin_amd64.tar.gz"
-      sha256 "5bddfc688787078eb8e97c06c22a2ffc06e1d068bc3faa8ea3e83bd2b46fdaf4"
+      url "https://github.com/SagarMaheshwary/reqlog/releases/download/v0.10.0/reqlog_0.10.0_darwin_amd64.tar.gz"
+      sha256 "9d0d2b48e287eca87a202473c87d355093870c7e940365392f80b2dcd091bdfa"
 
       define_method(:install) do
         bin.install "reqlog"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/SagarMaheshwary/reqlog/releases/download/v0.9.1-rc2/reqlog_0.9.1-rc2_darwin_arm64.tar.gz"
-      sha256 "1a370456e56959de1ad3a82785703823f360ae21829d95e86ffe9c7f06322ba6"
+      url "https://github.com/SagarMaheshwary/reqlog/releases/download/v0.10.0/reqlog_0.10.0_darwin_arm64.tar.gz"
+      sha256 "0e4dee9d0106ed4169c59ea282d9cf35cb064bd2b5d7d86dfceedbd2bc83d68a"
 
       define_method(:install) do
         bin.install "reqlog"
@@ -29,15 +29,15 @@ class Reqlog < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/SagarMaheshwary/reqlog/releases/download/v0.9.1-rc2/reqlog_0.9.1-rc2_linux_amd64.tar.gz"
-      sha256 "16328cffb4d5d2450e3825126bf143a7f67a545cce26d9e0d6e714fbb17e7da8"
+      url "https://github.com/SagarMaheshwary/reqlog/releases/download/v0.10.0/reqlog_0.10.0_linux_amd64.tar.gz"
+      sha256 "bf9df3201b617243a63d0ba408ed9b5d934b7d29fb217777d51a0a3355600817"
       define_method(:install) do
         bin.install "reqlog"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/SagarMaheshwary/reqlog/releases/download/v0.9.1-rc2/reqlog_0.9.1-rc2_linux_arm64.tar.gz"
-      sha256 "8ddeec87785be31b185cb748663699e2d60e083fce4728eb6197a450c8c9a134"
+      url "https://github.com/SagarMaheshwary/reqlog/releases/download/v0.10.0/reqlog_0.10.0_linux_arm64.tar.gz"
+      sha256 "303e9dc8fe509c3d2a1fe4fbfaf7158c51f21dcbcaaaae6eaa7362faff771bb2"
       define_method(:install) do
         bin.install "reqlog"
       end
